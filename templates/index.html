@@ -8,73 +8,72 @@
 
 	<body>
 	<div class="login">
-	<h2>Cement 1Day Strength Prediction</h2>
+	<h1>Cement 1Day Strength Prediction</h1>
 
 	<!-- Main Input For Receiving Query to our ML -->
 	<form action="{{ url_for('predict')}}"method="post">
 <table border="1">
 
-
-	<tr>
-	    <th>Parameters</th>
-	    <th>Typical Value</th>
+	<tr >
+	    <th width="220">Parameters</th>
+	    <th width="180">Typical Value</th>
 	    <th>Enter Value</th>
   	</tr>
   	<tr>
-	    <td><label for="Cement_CaO">Cement CaO (%)</label></td>
-	    <td style="text-align:center">40.5</td>
-	    <td><input type="text" name="Cement_CaO"  required="required" /><br /></td>
+	    <td height="40"><label for="Cement_CaO">Cement CaO (%)</label></td>
+	    <td style="text-align:right" >40.5</td>
+	    <td><input type="text"  style="text-align:right;" name="Cement_CaO"  required="required" /><br /></td>
   </tr>
   	<tr>
-	    <td><label for="C_Blaine">Cement Blaine (m2/kg)</label></td>
-	    <td style="text-align:center">350</td>
-	    <td><input type="text" name="C_Blaine" required="required" /><br /></td>
+	    <td height="40"><label for="C_Blaine">Cement Blaine (m2/kg)</label></td>
+	    <td style="text-align:right" >350</td>
+	    <td><input type="text"  style="text-align:right;" name="C_Blaine" required="required" /><br /></td>
   </tr>
    	<tr>
- 	    <td><label for="Cement_So3_x">Cement SO3 (%)</label></td>
- 	    <td style="text-align:center">2.5</td>
- 	    <td><input type="text" name="Cement_So3_x"  required="required" /><br /></td>
+ 	    <td height="40"><label for="Cement_So3_x">Cement SO3 (%)</label></td>
+ 	    <td style="text-align:right" >2.5</td>
+ 	    <td><input type="text"  style="text-align:right;" name="Cement_So3_x"  required="required" /><br /></td>
   </tr>
     	<tr>
-  	    <td><label for="PA_prop">PA Proportion (%)</label></td>
-  	    <td style="text-align:center">2</td>
-  	    <td><input type="text" name="PA_prop"  required="required" /><br /></td>
+  	    <td height="40"><label for="PA_prop">PA Proportion (%)</label></td>
+  	    <td style="text-align:right" >2</td>
+  	    <td><input type="text"  style="text-align:right;" name="PA_prop"  required="required" /><br /></td>
   </tr>
     	<tr>
-  	    <td><label for="GA_Dosage_x">GA Dosage (ml/min)</label></td>
-  	    <td style="text-align:center">1950</td>
-  	    <td><input type="text" name="GA_Dosage_x"  required="required" /><br /></td>
+  	    <td height="40"><label for="GA_Dosage_x">GA Dosage (ml/min)</label></td>
+  	    <td style="text-align:right" >1950</td>
+  	    <td><input type="text"  style="text-align:right;" name="GA_Dosage_x"  required="required" /><br /></td>
   </tr>
     	<tr>
-  	    <td><label for="Cl_C3s">Clinker C3S (%)</label></td>
-  	    <td style="text-align:center">49</td>
-  	    <td><input type="text" name="Cl_C3s"  required="required" /><br /></td>
+  	    <td height="40"><label for="Cl_C3s">Clinker C3S (%)</label></td>
+  	    <td style="text-align:right" >49</td>
+  	    <td><input type="text"  style="text-align:right;" name="Cl_C3s"  required="required" /><br /></td>
   </tr>
     	<tr>
-  	    <td><label for="Cl_C3A_x">Clinker C3A (%)</label></td>
-  	    <td style="text-align:center">5.5</td>
-  	    <td><input type="text" name="Cl_C3A_x"  required="required" /><br /></td>
+  	    <td height="40"><label for="Cl_C3A_x">Clinker C3A (%)</label></td>
+  	    <td style="text-align:right" >5.5</td>
+  	    <td><input type="text"  style="text-align:right;" name="Cl_C3A_x"  required="required" /><br /></td>
   </tr>
     	<tr>
-  	    <td><label for="Gypsum_Purity">Gypsum purity (%)</label></td>
-  	    <td style="text-align:center">58</td>
-  	    <td><input type="text" name="Gypsum_Purity" required="required" /><br /></td>
+  	    <td height="40"><label for="Gypsum_Purity">Gypsum purity (%)</label></td>
+  	    <td style="text-align:right" >58</td>
+  	    <td><input type="text"  style="text-align:right;" name="Gypsum_Purity" required="required" /><br /></td>
   </tr>
 
     	<tr>
-  	    <td><label for="BM">Ball mill Power (kWh)</label></td>
-  	    <td style="text-align:center">2150</td>
-  	    <td style="text-align:center"><input type="text" name="BM" required="required" /><br /></td>
+  	    <td height="40"><label for="BM">Ball mill Power (kWh)</label></td>
+  	    <td style="text-align:right" >2150</td>
+  	    <td style="text-align:center"><input type="text"  style="text-align:right;" name="BM" required="required" /><br /></td>
   </tr>
       	<tr>
-    	    <td><label for="RP_Power">Total RP Power (kWh)</label></td>
-    	    <td style="text-align:center">2200</td>
-    	    <td><input type="text" name="RP_Power" required="required" /><br /></td>
+    	    <td height="40"><label for="RP_Power">Total RP Power (kWh)</label></td>
+    	    <td style="text-align:right" >2200</td>
+    	    <td><input type="text"  style="text-align:right;" name="RP_Power" required="required" /><br /></td>
   </tr>
 	<tr>
-	    	<td><label>Predicted 1D strength (MPa)</label></td>
-	    	<td style="text-align:center">14.2</td>
-	    	<td>{{ prediction_text }}<br /></td>
+	    	<td height="40"><label>Predicted 1D strength (MPa)</label></td>
+	    	<td style="text-align:right" >14.2</td>
+	    	<td  style="text-align:right">{{ prediction_text }}<br /></td>
   </tr>
 	</table>
 	<br>
